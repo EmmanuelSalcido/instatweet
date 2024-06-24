@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Login from './component/Auth/Login'; // Ajusta la ruta según la estructura de tu proyecto
 
-function App() {
+import './App.css'; // Archivo para estilos CSS
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app-header">
+        <h1>InstaTweet</h1>
       </header>
+      <main className="app-content">
+        <Login />
+      </main>
+      <footer className="app-footer">
+        <p>&copy; 2024 InstaTweet</p>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
